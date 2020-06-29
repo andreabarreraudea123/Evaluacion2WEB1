@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FORMULARIO</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
@@ -57,7 +58,7 @@
         <h4 class="text-center mt-5">Consultar Registro</h4>
         <br>
             <form>
-                <div class="row align-items-center">
+                <div class="row align-items-center" id="Consultar">
                     <div class="col-6">
                         <label class="sr-only" for="usuario"></label>
                         <input type="text" class="form-control mb-3" id="usuario" placeholder="Buscar Usuario">
@@ -76,7 +77,7 @@
         <h4 class="text-center mt-5">Eliminar Registro</h4>
         <br>
             <form>
-                <div class="row align-items-center">
+                <div class="row align-items-center" id="eliminar">
                     <div class="col-6">
                         <label class="sr-only" for="eliminarUsuario"></label>
                         <input type="text" class="form-control mb-2" id="eliminarUsuario" placeholder="Eliminar Usuario">
@@ -92,8 +93,13 @@
 
 
 </main>
-
+<br><br><br><br>
 <footer>
+    <div id=piepagina>
+    <h5> Andrea Barrera Olivares &copy </h5>
+    <h5> &#9743; 3115632489 </h5>
+    <h5>  Medellín-Colombia-2020 </h5>
+    </div>
 
 </footer>
 
