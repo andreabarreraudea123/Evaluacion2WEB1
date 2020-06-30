@@ -23,11 +23,11 @@
             <div class="col">
                 <h4 class="text-center mt-5">Crear Registro</h4> 
                 <br>
-            <form>
+            <form action="agregarDatos.php" method="POST">
                 <div class="row align-items-center">
                     <div class="col">
                         <label class="sr-only" for="nombre">Name</label>
-                        <input type="text" class="form-control mb-2" id="Nombre" placeholder="Nombre Usuario">
+                        <input type="text" class="form-control mb-2" id="Nombre" placeholder="Nombre Usuario" name="Nombre">
                     </div>
                         <div class="col">
                         <label class="sr-only" for="Correo">Correo</label>
@@ -36,16 +36,16 @@
                                     <div class="input-group-text">@
                                     </div>
                                 </div>
-                                    <input type="text" class="form-control" id="Correo" placeholder="Correo Electrónico">
+                                    <input type="text" class="form-control" id="Correo" placeholder="Correo Electrónico" name="Correo">
                             </div>
                         </div>
 
                                 <div class="col">
                                    <label class="sr-only" for="password">Name</label>
-                                   <input type="password" class="form-control mb-2" id="password" placeholder="Contraseña">
+                                   <input type="password" class="form-control mb-2" id="password" placeholder="Contraseña" name="password">
                                 </div>
                                     <div class="col-auto">
-                                        <button type="submit" class="btn btn-primary mb-2">Agregar</button>
+                                        <button type="submit" class="btn btn-primary mb-2"id="btnagregar" name="btnagregar" >Agregar</button>
                                     </div>
                 </div>
             </form>
@@ -57,14 +57,14 @@
         <div class="col">
         <h4 class="text-center mt-5">Consultar Registro</h4>
         <br>
-            <form>
+            <form action="consultarDatos.php" method="POST">
                 <div class="row align-items-center" id="Consultar">
                     <div class="col-6">
                         <label class="sr-only" for="usuario"></label>
-                        <input type="text" class="form-control mb-3" id="usuario" placeholder="Buscar Usuario">
+                        <input type="text" class="form-control mb-3" id="usuario" placeholder="Buscar Usuario" name="usuario">
                     </div>
                     <div class="col-auto">
-                        <button type="submit" class="btn btn-primary mb-3">Buscar</button>
+                        <button type="submit" class="btn btn-primary mb-3" id="btnbuscar" name="btnbuscar">Buscar</button>
                     </div>
                 </div>
             </form>     
@@ -76,14 +76,14 @@
         <div class="col">
         <h4 class="text-center mt-5">Eliminar Registro</h4>
         <br>
-            <form>
+            <form action="EliminarDatos.php" method="POST">
                 <div class="row align-items-center" id="eliminar">
                     <div class="col-6">
                         <label class="sr-only" for="eliminarUsuario"></label>
-                        <input type="text" class="form-control mb-2" id="eliminarUsuario" placeholder="Eliminar Usuario">
+                        <input type="text" class="form-control mb-2" id="eliminarUsuario" placeholder="Eliminar Usuario" name="eliminarUsuario">
                     </div>
                     <div class="col-auto">
-                        <button type="submit" class="btn btn-primary mb-2">Eliminar</button>
+                        <button type="submit" class="btn btn-primary mb-2" id="btneliminar" name="btneliminar">Eliminar</button>
                     </div>
                 </div>
             </form>     
